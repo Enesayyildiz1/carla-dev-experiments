@@ -43,7 +43,7 @@ int main() {
         auto blueprint_library = world.GetBlueprintLibrary();
 
         auto actors = world.GetActors();
-        const int vehicle_id = 180; //manual_control.py ile elde edilen araç ID'si
+        const int vehicle_id = 203; //manual_control.py ile elde edilen araç ID'si
         auto vehicle_actor = actors->Find(vehicle_id);
         auto vehicle = boost::dynamic_pointer_cast<carla::client::Vehicle>(vehicle_actor);
         if (!vehicle) {
